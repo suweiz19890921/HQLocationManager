@@ -145,6 +145,8 @@
 - (void)processLocationResponses
 {
     [self completeAllLocationResponses];
+    
+    
 }
 
 + (NSString *)geohash:(CLLocation *)location
@@ -409,7 +411,7 @@
     NSLog(@"位置更新错误: %@", [error localizedDescription]);
     self.uploadError = YES;
     [self processLocationResponses];
-    NSString *errorString;
+//    NSString *errorString;
     switch([error code]) {
         case kCLErrorDenied:
             //Access denied by user

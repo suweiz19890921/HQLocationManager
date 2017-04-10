@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-  位置管理类
+  位置管理位置管理位置管理类
                    DESC
 
   s.homepage     = "http://192.168.1.249:10080/yangyang/HQLocationManager"
