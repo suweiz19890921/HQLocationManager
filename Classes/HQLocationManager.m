@@ -140,7 +140,6 @@
         [self.locationResponses removeObject:loctaionResponse];
     }
     [self.locationManager stopUpdatingLocation];
-
 }
 
 - (void)processLocationResponses
