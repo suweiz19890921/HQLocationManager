@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HQLocationManager"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "位置信息管理"
 
   # This description is used to generate tags and improve search results.
@@ -131,5 +131,6 @@ Pod::Spec.new do |s|
 
   # s.requires_arc = true
   s.dependency 'AFNetworking', '~>3.0'
+  s.dependency 'HQDBDecode', :git => 'ssh://git@git.solot.co:10022/liuhuanqing/HQDBDecode.git'
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 end

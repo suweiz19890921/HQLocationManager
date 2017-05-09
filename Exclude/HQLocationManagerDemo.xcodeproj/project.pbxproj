@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		384E37355CC667A9293D65B7 /* libPods-HQLocationManagerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C98C778C789603B6DB4C49FA /* libPods-HQLocationManagerDemo.a */; };
+		44F3A1D3AEA52E46AB990934 /* Pods_HQLocationManagerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EFAB76C132E49CA15695C81 /* Pods_HQLocationManagerDemo.framework */; };
 		65DAF49E1E9B8844005C8F21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DAF49D1E9B8844005C8F21 /* main.m */; };
 		65DAF4A11E9B8844005C8F21 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DAF4A01E9B8844005C8F21 /* AppDelegate.m */; };
 		65DAF4A41E9B8844005C8F21 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DAF4A31E9B8844005C8F21 /* ViewController.m */; };
@@ -23,9 +23,11 @@
 		65DAF4C91E9B892C005C8F21 /* GHRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DAF4C41E9B892C005C8F21 /* GHRange.m */; };
 		65DAF4CD1E9B89C5005C8F21 /* PositionDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DAF4CC1E9B89C5005C8F21 /* PositionDecode.m */; };
 		65DAF4D01E9B8C9B005C8F21 /* HQGeocodeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DAF4CF1E9B8C9B005C8F21 /* HQGeocodeModel.m */; };
+		65E1F99D1EC1A7C50063BA13 /* HQLocationManager.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 65E1F99C1EC1A7C50063BA13 /* HQLocationManager.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1EFAB76C132E49CA15695C81 /* Pods_HQLocationManagerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HQLocationManagerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65DAF4991E9B8844005C8F21 /* HQLocationManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HQLocationManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65DAF49D1E9B8844005C8F21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		65DAF49F1E9B8844005C8F21 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,8 +55,8 @@
 		65DAF4CC1E9B89C5005C8F21 /* PositionDecode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PositionDecode.m; sourceTree = "<group>"; };
 		65DAF4CE1E9B8C9B005C8F21 /* HQGeocodeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQGeocodeModel.h; sourceTree = "<group>"; };
 		65DAF4CF1E9B8C9B005C8F21 /* HQGeocodeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQGeocodeModel.m; sourceTree = "<group>"; };
+		65E1F99C1EC1A7C50063BA13 /* HQLocationManager.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HQLocationManager.podspec; path = ../HQLocationManager.podspec; sourceTree = "<group>"; };
 		7FA8E4F24B22718647CEBDC5 /* Pods-HQLocationManagerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQLocationManagerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HQLocationManagerDemo/Pods-HQLocationManagerDemo.release.xcconfig"; sourceTree = "<group>"; };
-		C98C778C789603B6DB4C49FA /* libPods-HQLocationManagerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HQLocationManagerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9861D34D96DB19B3066DA75 /* Pods-HQLocationManagerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQLocationManagerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HQLocationManagerDemo/Pods-HQLocationManagerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,7 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65DAF4B91E9B88B9005C8F21 /* CoreLocation.framework in Frameworks */,
-				384E37355CC667A9293D65B7 /* libPods-HQLocationManagerDemo.a in Frameworks */,
+				44F3A1D3AEA52E46AB990934 /* Pods_HQLocationManagerDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,7 @@
 		65DAF4901E9B8844005C8F21 = {
 			isa = PBXGroup;
 			children = (
+				65E1F99C1EC1A7C50063BA13 /* HQLocationManager.podspec */,
 				65DAF4B31E9B889A005C8F21 /* Classes */,
 				65DAF49B1E9B8844005C8F21 /* HQLocationManagerDemo */,
 				65DAF49A1E9B8844005C8F21 /* Products */,
@@ -141,7 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				65DAF4B81E9B88B8005C8F21 /* CoreLocation.framework */,
-				C98C778C789603B6DB4C49FA /* libPods-HQLocationManagerDemo.a */,
+				1EFAB76C132E49CA15695C81 /* Pods_HQLocationManagerDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			files = (
 				65DAF4AC1E9B8844005C8F21 /* LaunchScreen.storyboard in Resources */,
 				65DAF4A91E9B8844005C8F21 /* Assets.xcassets in Resources */,
+				65E1F99D1EC1A7C50063BA13 /* HQLocationManager.podspec in Resources */,
 				65DAF4A71E9B8844005C8F21 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,7 +274,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		94F9A226751907EBE0F7449B /* [CP] Copy Pods Resources */ = {

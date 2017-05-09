@@ -207,21 +207,23 @@
 {
     CLGeocoder *geocoder = [[CLGeocoder alloc]init];
     NSString *geohash = [self geohash:loacation];
-//    HQGeocodeModel *g = [[HQLocationManager sharedInstance].reverseGeocodeCache objectForKey:geohash];
-//    if(g)
-//    {
-//        if(completion)completion(g);
-//    }
-//    else
-//    {
-//        g = [[HQGeocodeModel selectByProperty:@"geohash" propertyValue:geohash] firstObject];
-//        if (g)
-//        {
-//            [[HQLocationManager sharedInstance].reverseGeocodeCache setObject:g forKey:g.geohash];
-//            if(completion)completion(g);
-//        }
-//        else
-//        {
+    HQGeocodeModel *g = [[HQLocationManager sharedInstance].reverseGeocodeCache objectForKey:geohash];
+    if(g)
+    {
+        if(completion)completion(g);
+    }
+    else
+    {
+        if (geohash) {
+            g = [[HQGeocodeModel hq_selectByColumns:@{@"geohash":geohash}] firstObject];
+        }
+        if (g)
+        {
+            [[HQLocationManager sharedInstance].reverseGeocodeCache setObject:g forKey:g.geohash];
+            if(completion)completion(g);
+        }
+        else
+        {
             [geocoder reverseGeocodeLocation:loacation completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
                 if(placemarks.count > 0)
                 {
@@ -233,7 +235,7 @@
                     geo.locality = placemark.locality;
                     geo.administrativeArea = placemark.administrativeArea;
                     geo.isoCountryCode = placemark.ISOcountryCode;
-                    geo.lastName = placemark.thoroughfare;
+                    geo.name = placemark.name;
                     NSDictionary *dict = placemark.addressDictionary;
                     NSArray *arr = [dict objectForKey:@"FormattedAddressLines"];
                     if (arr.count > 0) {
@@ -254,7 +256,7 @@
 //                    NSLog(@"country %@",placemark.country);
 //                    NSLog(@"inlandWater %@",placemark.inlandWater);
 //                    NSLog(@"ocean %@",placemark.ocean);
-//                    [geo insert];
+                    [geo hq_insert];
                     [[HQLocationManager sharedInstance].reverseGeocodeCache setObject:geo forKey:geo.geohash];
                     if(completion)
                     {
@@ -287,8 +289,8 @@
                     }];
                 }
             }];
-//        }
-//    }
+        }
+    }
 }
 
 
@@ -345,7 +347,7 @@
                                 geo.locality = [address objectForKey:@"long_name"];
                             }
                         }
-//                        [geo insert];
+                        [geo hq_insert];
                         if (completion) {
                             completion(geo);
                         }

@@ -19,7 +19,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [[HQLocationManager sharedInstance]startUpdatingLocationWithCallback:^(CLLocation *location, HQLocationServicesState status) {
-        
+        [HQLocationManager reverseGeocodeLocation:location completion:^(HQGeocodeModel *geocode) {
+            
+        }];
     }];
 }
 

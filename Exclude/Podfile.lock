@@ -14,13 +14,33 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - HQDBDecode (0.0.7):
+    - FMDB (~> 2.6.2)
+    - YYModel (~> 1.0.4)
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - HQDBDecode (from `ssh://git@git.solot.co:10022/liuhuanqing/HQDBDecode.git`)
+
+EXTERNAL SOURCES:
+  HQDBDecode:
+    :git: ssh://git@git.solot.co:10022/liuhuanqing/HQDBDecode.git
+
+CHECKOUT OPTIONS:
+  HQDBDecode:
+    :commit: 825203ace7446f774ad214f5091eedb328ec7181
+    :git: ssh://git@git.solot.co:10022/liuhuanqing/HQDBDecode.git
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  HQDBDecode: 3183eae7382be27fa18c0e2770d354d9801a009f
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 2dc8307eea2dcea9344d725f80bad26ffd4668b5
+PODFILE CHECKSUM: 923ef716e91701ffde5fb6de5b679c1a3ed05b0f
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.1

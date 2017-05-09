@@ -7,21 +7,24 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSObject+HQDBDecode.h"
 
 @interface HQGeocodeModel : NSObject
 
-@property (nonatomic, copy) NSString *isoCountryCode;
+@property (nonatomic, copy) NSString *isoCountryCode;           //CN
 
 @property (nonatomic, copy) NSString *geohash;
 
-@property (nonatomic, copy) NSString *country;
+@property (nonatomic, copy) NSString *country;                  //国
 
-@property (nonatomic, copy) NSString *locality;
+@property (nonatomic, copy) NSString *subLocality;              //区
 
-@property (nonatomic, copy) NSString *administrativeArea;
+@property (nonatomic, copy) NSString *locality;                 //市
 
-@property (nonatomic, copy) NSString *formatAddressString;
+@property (nonatomic, copy) NSString *administrativeArea;       //省
 
-@property (nonatomic, copy) NSString *lastName;
+@property (nonatomic, copy) NSString *formatAddressString;      //详细地址
+
+@property (nonatomic, copy) NSString *name;
 
 @end

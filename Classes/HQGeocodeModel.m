@@ -10,4 +10,14 @@
 
 @implementation HQGeocodeModel
 
+//** 主键列表*/
++ (nullable NSArray<NSString *> *)hq_propertyPrimarykeyList {
+    return @[@"geohash"];
+}
+
+//** 所属库名称/
++ (nonnull NSString *)hq_dbName {
+    return @"location.db";
+}
+
 @end
