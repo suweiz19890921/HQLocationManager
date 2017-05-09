@@ -14,7 +14,7 @@
 #import "PositionDecode.h"
 #import <CoreLocation/CLGeocoder.h>
 #import <CoreLocation/CLPlacemark.h>
-#import "AFNetworking.h"
+#import <AFNetworking/AFNetworking.h>
 
 #define HQLAST_LOCATION @"HQLAST_LOCATION"
 @interface HQLocationManager()<CLLocationManagerDelegate>

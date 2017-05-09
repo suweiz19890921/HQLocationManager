@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NSObject+HQDBDecode.h"
+#import <HQDBDecode/NSObject+HQDBDecode.h>
 
 @interface HQGeocodeModel : NSObject
 

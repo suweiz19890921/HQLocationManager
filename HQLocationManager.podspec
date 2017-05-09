@@ -131,6 +131,6 @@ Pod::Spec.new do |s|
 
   # s.requires_arc = true
   s.dependency 'AFNetworking', '~>3.0'
-  s.dependency 'HQDBDecode', :git => 'ssh://git@git.solot.co:10022/liuhuanqing/HQDBDecode.git'
+  s.dependency 'HQDBDecode'
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 end
