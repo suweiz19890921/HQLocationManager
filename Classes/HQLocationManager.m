@@ -35,7 +35,16 @@
     static HQLocationManager *_sharedInstance;
     static dispatch_once_t _onceToken;
     dispatch_once(&_onceToken, ^{
-        _sharedInstance = [[self alloc] init];
+        if([NSThread isMainThread])
+        {
+            _sharedInstance = [[self alloc] init];
+        }
+        else
+        {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                _sharedInstance = [[self alloc] init];
+            });
+        }
     });
     return _sharedInstance;
 }
