@@ -27,6 +27,7 @@ typedef void (^locationResponseBlock)(CLLocation *location,HQLocationServicesSta
 @property (strong, nonatomic) CLLocation *standardLocation;//标准坐标
 @property (strong, nonatomic) CLLocation *lastLocation;//最有所在位置
 
++ (void)start;
 /**
  *  获取最后定位的坐标geohash值
  *
