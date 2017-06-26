@@ -30,6 +30,11 @@
 @end
 
 @implementation HQLocationManager
+
++ (void)start {
+    [self sharedInstance];
+}
+
 + (instancetype)sharedInstance
 {
     static HQLocationManager *_sharedInstance;
