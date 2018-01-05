@@ -405,6 +405,7 @@
     wgs2gcj(location.coordinate.latitude,location.coordinate.longitude,&lat,&lon);
     location = [[CLLocation alloc] initWithCoordinate:CLLocationCoordinate2DMake(lat, lon) altitude:location.altitude horizontalAccuracy:kCLLocationAccuracyBest verticalAccuracy:kCLLocationAccuracyBest timestamp:location.timestamp];
     self.lastLocation = location;
+     [[NSNotificationCenter defaultCenter] postNotificationName:HQCurrentLocationDidChange object:nil];
     self.uploadError = NO;
     [_locations removeAllObjects];
     [self processLocationResponses];
