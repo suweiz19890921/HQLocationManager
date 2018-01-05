@@ -21,7 +21,7 @@ typedef NS_ENUM(NSInteger, HQLocationServicesState)
 };
 
 typedef void (^locationResponseBlock)(CLLocation *location,HQLocationServicesState status);
-
+#define HQCurrentLocationDidChange @"HQCurrentLocationDidChange"
 @interface HQLocationManager : NSObject
 
 @property (strong, nonatomic) CLLocation *standardLocation;//标准坐标
