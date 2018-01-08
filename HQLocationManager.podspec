@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HQLocationManager"
-  s.version      = "0.0.5"
+  s.version      = "0.0.8"
   s.summary      = "位置信息管理"
 
   # This description is used to generate tags and improve search results.
