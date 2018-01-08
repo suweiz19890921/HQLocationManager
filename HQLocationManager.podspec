@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   位置管理位置管理位置管理类
                    DESC
 
-  s.homepage     = "http://192.168.1.249:10080/yangyang/HQLocationManager"
+  s.homepage     = "https://github.com/suweiz19890921/HQLocationManager"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/suweiz19890921/HQLocationManager", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/suweiz19890921/HQLocationManager.git", :tag => s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
