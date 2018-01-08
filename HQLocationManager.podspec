@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://git.solot.co:10080/yangyang/HQLocationManager.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/suweiz19890921/HQLocationManager", :tag => s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
